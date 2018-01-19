@@ -11,24 +11,6 @@ unsigned char in[16], out[16], state[4][4];
 // The array that stores the round keys.
 unsigned char RoundKey[240];
 // The Key input to the AES Program
-unsigned char Key[16]={0x0,0x1,0x2,0x3,0x4,0x5,0x6,0x7,0x8,0x9,0xa,0xb,0xc,0xd,0xe,0xf};
-char temp[17];
+unsigned char Key[32];
 int x=0,y=0;
-
-// Voting Variables
-
-int candy = 1;
-// validate that input is an integer
-int get_int(void);
-// validate that range limits are valid
-//Vote Counting
-void Counting(char* fileName, int partyNo);
-int MIN[3] = {1,1,1};
-int MAX[3] = {6,6,4};
-int total[4] = {0};
-const char *candidates[17];
-unsigned char count2[17];
-int flag;
-flag=1;
-
-
+char temp[17];
